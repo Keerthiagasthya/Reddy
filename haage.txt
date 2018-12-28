@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using EHS.BusinessLayer;
+
+namespace EasyHousingSolution
+{
+    /// <summary>
+    /// Interaction logic for Admin.xaml
+    /// </summary>
+    public partial class Admin : Window
+    {
+        public Admin()
+        {
+            InitializeComponent();
+        }
+
+        SellerBL sellerBL = new SellerBL();
+        Seller seller = new Seller();
+        State state = new State();
+        City city = new City();
+
+        public void Region()
+        {
+            SellerFunc SellerFuncObj = new SellerFunc();
+            try
+            {
+
+                City ct = (City)cmbSellerCity.SelectedValue;
+                seller.CityId = sellerBL.getCityId(ct.CityName);
+                var region= from esh.City where
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

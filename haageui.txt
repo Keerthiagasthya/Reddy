@@ -1,0 +1,34 @@
+ <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Label Content="Administrator Page" HorizontalAlignment="Left" Margin="91,-150,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="342" Height="48"/>
+
+        <Label Content="Administrator Page" FontSize="30" HorizontalAlignment="Left" Margin="155,63,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock FontFamily="Calibri" FontWeight="DemiBold" FontSize="20" Foreground="AntiqueWhite" Padding="2" Margin="0,0,0,0" 
+                   Grid.Column="0" Grid.Row="1
+                   ">view Property by Region</TextBlock>
+        <ComboBox Grid.Column="1" Grid.Row="0" Opacity="0.7" Margin="0,0,170,0" Name="cmbSellerCity"/>
+
+        <TextBlock FontFamily="Calibri" FontWeight="DemiBold" FontSize="20" Foreground="AntiqueWhite" Padding="2" Margin="0,0,0,0" Grid.Column="0" Grid.Row="0
+                   ">view Property by owner</TextBlock>
+        
+        <ComboBox Grid.Column="1" Grid.Row="1" Opacity="0.7" Margin="0,0,170,0" Name="cmbonwer"/>
+
+
+
+
+        <Button FontFamily="Calibri" FontWeight="Regular" FontSize="20" 
+                Padding="2" Margin="0,0,0,0" 
+                   Grid.Column="0" Grid.Row="2">Delete the Property</Button>
+       
+
+
+    </Grid>
